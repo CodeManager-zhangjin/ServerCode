@@ -1,0 +1,1 @@
+link ../../common/qiniu/qiniuInterface.h

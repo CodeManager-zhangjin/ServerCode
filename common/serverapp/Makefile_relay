@@ -1,0 +1,32 @@
+CC=g++
+CFLAGS= -g -DSERVERAPP_NB
+
+OBJECTS = ServerApp.o \
+		  ServerSend.o \
+		  ServerAuth.o \
+		  ServerAppInterface.o
+
+#-I$(LINUX_INC) -I$(CAPPATH)
+CFLAGS += -I. -I../../relay_server/include -I../../include
+
+# Name of the executable
+EXENAME = ../../relay_server/lib/libServerApp.a
+
+EXTLIBS = -lstdc++  -lpthread
+EXTLIBSPATH = 
+ 
+.cpp.o:
+	$(CC) -c  $(CFLAGS)  -D__cplusplus $< -o $@
+.c.o:
+	$(CC) -c  $(CFLAGS)   $< -o $@
+
+# Builds all object files and executable
+${EXENAME} : $(OBJECTS) 
+	$(AR) rc $@ $(OBJECTS)
+	
+# Clean up
+clean :
+	rm -f $(OBJECTS) 
+	rm -f $(EXENAME)
+
+

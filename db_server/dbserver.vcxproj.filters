@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="serverapp">
+      <UniqueIdentifier>{76644b9a-83bc-4dc3-ba94-42e1a8dd0d69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dbhandle">
+      <UniqueIdentifier>{6308a684-00f5-4611-b6ac-a4c9682fb0e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dbserver">
+      <UniqueIdentifier>{7c1b1b02-064b-49c4-bb72-d4f70a42a640}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dbhandle\dbHandle.cpp">
+      <Filter>dbhandle</Filter>
+    </ClCompile>
+    <ClCompile Include="dbhandle\dbHandleInterface.cpp">
+      <Filter>dbhandle</Filter>
+    </ClCompile>
+    <ClCompile Include="serverapp\ServerApp.cpp">
+      <Filter>serverapp</Filter>
+    </ClCompile>
+    <ClCompile Include="serverapp\ServerAppInterface.cpp">
+      <Filter>serverapp</Filter>
+    </ClCompile>
+    <ClCompile Include="serverapp\ServerAuth.cpp">
+      <Filter>serverapp</Filter>
+    </ClCompile>
+    <ClCompile Include="dbserver\main.cpp">
+      <Filter>dbserver</Filter>
+    </ClCompile>
+    <ClCompile Include="dbserver\Server.cpp">
+      <Filter>dbserver</Filter>
+    </ClCompile>
+    <ClCompile Include="dbhandle\Lock.cpp">
+      <Filter>dbhandle</Filter>
+    </ClCompile>
+    <ClCompile Include="dbhandle\StorageEngine.cpp">
+      <Filter>dbhandle</Filter>
+    </ClCompile>
+    <ClCompile Include="dbhandle\Thread.cpp">
+      <Filter>dbhandle</Filter>
+    </ClCompile>
+    <ClCompile Include="serverapp\Lock.cpp">
+      <Filter>serverapp</Filter>
+    </ClCompile>
+    <ClCompile Include="serverapp\Thread.cpp">
+      <Filter>serverapp</Filter>
+    </ClCompile>
+    <ClCompile Include="dbhandle\DBSDK.cpp">
+      <Filter>dbhandle</Filter>
+    </ClCompile>
+    <ClCompile Include="dbhandle\dbHandle_storage.cpp">
+      <Filter>dbhandle</Filter>
+    </ClCompile>
+    <ClCompile Include="dbhandle\dbHandle_operation.cpp">
+      <Filter>dbhandle</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dbhandle\dbHandle.h">
+      <Filter>dbhandle</Filter>
+    </ClInclude>
+    <ClInclude Include="dbhandle\dbHandleInterface.h">
+      <Filter>dbhandle</Filter>
+    </ClInclude>
+    <ClInclude Include="dbhandle\dbTag.h">
+      <Filter>dbhandle</Filter>
+    </ClInclude>
+    <ClInclude Include="serverapp\ElemMap_ServerApp.h">
+      <Filter>serverapp</Filter>
+    </ClInclude>
+    <ClInclude Include="serverapp\ElemSet_ServerApp.h">
+      <Filter>serverapp</Filter>
+    </ClInclude>
+    <ClInclude Include="serverapp\ServerApp.h">
+      <Filter>serverapp</Filter>
+    </ClInclude>
+    <ClInclude Include="serverapp\ServerAppInterface.h">
+      <Filter>serverapp</Filter>
+    </ClInclude>
+    <ClInclude Include="serverapp\ServerAuth.h">
+      <Filter>serverapp</Filter>
+    </ClInclude>
+    <ClInclude Include="dbserver\Server.h">
+      <Filter>dbserver</Filter>
+    </ClInclude>
+    <ClInclude Include="dbhandle\dbHandle_storage.h">
+      <Filter>dbhandle</Filter>
+    </ClInclude>
+    <ClInclude Include="dbhandle\Lock.h">
+      <Filter>dbhandle</Filter>
+    </ClInclude>
+    <ClInclude Include="dbhandle\StorageEngine.h">
+      <Filter>dbhandle</Filter>
+    </ClInclude>
+    <ClInclude Include="dbhandle\Thread.h">
+      <Filter>dbhandle</Filter>
+    </ClInclude>
+    <ClInclude Include="serverapp\Lock.h">
+      <Filter>serverapp</Filter>
+    </ClInclude>
+    <ClInclude Include="serverapp\Thread.h">
+      <Filter>serverapp</Filter>
+    </ClInclude>
+    <ClInclude Include="dbhandle\DBSDK.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dbdef.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dbHandleInterface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\qiniuInterface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ServerAppInterface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UnlockManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WebcmdInterface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="dbhandle\dbHandle_operation.h">
+      <Filter>dbhandle</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dbhandle\Makefile">
+      <Filter>dbhandle</Filter>
+    </None>
+    <None Include="serverapp\Makefile">
+      <Filter>serverapp</Filter>
+    </None>
+    <None Include="Makefile_LIB" />
+    <None Include="Makefile" />
+    <None Include="Makefile_db" />
+    <None Include="Makefile_sdb" />
+  </ItemGroup>
+</Project>

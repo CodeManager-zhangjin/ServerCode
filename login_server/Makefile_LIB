@@ -1,0 +1,5 @@
+SUBDIRS := clientapp
+all:
+	$(foreach N,$(SUBDIRS),make -C $(N);)
+clean:
+	$(foreach N,$(SUBDIRS),make -C $(N) clean;)

@@ -1,0 +1,29 @@
+CC=g++
+CFLAGS= -g -DDBSERVER_DB
+
+OBJECTS = dbHandle.o dbHandle_storage.o dbHandleInterface.o StorageEngine.o Thread.o Lock.o DBSDK.o
+
+#-I$(LINUX_INC) -I$(CAPPATH)
+CFLAGS += -I. -I../include -I../../include -I/usr/include/mysql -I/usr/include/mysql++
+
+# Name of the executable
+EXENAME = ../lib/libdbhandle_db.a
+
+EXTLIBS = -lstdc++  -lpthread
+EXTLIBSPATH = 
+ 
+.cpp.o:
+	$(CC) -c  $(CFLAGS)  -D__cplusplus $< -o $@
+.c.o:
+	$(CC) -c  $(CFLAGS)   $< -o $@
+
+# Builds all object files and executable
+${EXENAME} : $(OBJECTS) 
+	$(AR) rc $@ $(OBJECTS)
+	
+# Clean up
+clean :
+	rm -f $(OBJECTS) 
+	rm -f $(EXENAME)
+
+

@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="d">
+      <UniqueIdentifier>{e034d71e-0c07-4943-99dc-6d8902bd8c9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="view">
+      <UniqueIdentifier>{22a58c0d-19c6-4e04-bbcc-adabbf217405}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="device">
+      <UniqueIdentifier>{2cf24650-a620-4e39-9c5e-1662f0e864af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{0d0d174c-d8af-4bff-83a8-6a50d239a18d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ddlgn">
+      <UniqueIdentifier>{0740b166-c21d-47a8-90f4-c2595eb2035c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dispatch">
+      <UniqueIdentifier>{74810675-2d9b-46ed-8be5-a7f1084c90ce}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="d\main.cpp">
+      <Filter>d</Filter>
+    </ClCompile>
+    <ClCompile Include="d\Server.cpp">
+      <Filter>d</Filter>
+    </ClCompile>
+    <ClCompile Include="view\ViewInterface.cpp">
+      <Filter>view</Filter>
+    </ClCompile>
+    <ClCompile Include="view\View.cpp">
+      <Filter>view</Filter>
+    </ClCompile>
+    <ClCompile Include="device\Device.cpp">
+      <Filter>device</Filter>
+    </ClCompile>
+    <ClCompile Include="device\DeviceInterface.cpp">
+      <Filter>device</Filter>
+    </ClCompile>
+    <ClCompile Include="dispatch\DispatchInterface.cpp">
+      <Filter>dispatch</Filter>
+    </ClCompile>
+    <ClCompile Include="dispatch\Dispatch.cpp">
+      <Filter>dispatch</Filter>
+    </ClCompile>
+    <ClCompile Include="ddlgn\ddlgnInterface.cpp">
+      <Filter>ddlgn</Filter>
+    </ClCompile>
+    <ClCompile Include="ddlgn\ddLogin.cpp">
+      <Filter>ddlgn</Filter>
+    </ClCompile>
+    <ClCompile Include="ddlgn\Thread.cpp">
+      <Filter>ddlgn</Filter>
+    </ClCompile>
+    <ClCompile Include="ddlgn\Lock.cpp">
+      <Filter>ddlgn</Filter>
+    </ClCompile>
+    <ClCompile Include="device\Lock.cpp">
+      <Filter>device</Filter>
+    </ClCompile>
+    <ClCompile Include="device\Thread.cpp">
+      <Filter>device</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="d\Server.h">
+      <Filter>d</Filter>
+    </ClInclude>
+    <ClInclude Include="view\ViewInterface.h">
+      <Filter>view</Filter>
+    </ClInclude>
+    <ClInclude Include="view\View.h">
+      <Filter>view</Filter>
+    </ClInclude>
+    <ClInclude Include="view\ElemMapView.h">
+      <Filter>view</Filter>
+    </ClInclude>
+    <ClInclude Include="device\Device.h">
+      <Filter>device</Filter>
+    </ClInclude>
+    <ClInclude Include="device\DeviceInterface.h">
+      <Filter>device</Filter>
+    </ClInclude>
+    <ClInclude Include="device\ElemMapDevice.h">
+      <Filter>device</Filter>
+    </ClInclude>
+    <ClInclude Include="dispatch\DispatchInterface.h">
+      <Filter>dispatch</Filter>
+    </ClInclude>
+    <ClInclude Include="dispatch\ElemMapDispatch.h">
+      <Filter>dispatch</Filter>
+    </ClInclude>
+    <ClInclude Include="dispatch\Dispatch.h">
+      <Filter>dispatch</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SvrCheck.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="ddlgn\ddlgnInterface.h">
+      <Filter>ddlgn</Filter>
+    </ClInclude>
+    <ClInclude Include="ddlgn\ddLogin.h">
+      <Filter>ddlgn</Filter>
+    </ClInclude>
+    <ClInclude Include="ddlgn\ElemSetDDLgn.h">
+      <Filter>ddlgn</Filter>
+    </ClInclude>
+    <ClInclude Include="ddlgn\Thread.h">
+      <Filter>ddlgn</Filter>
+    </ClInclude>
+    <ClInclude Include="ddlgn\Lock.h">
+      <Filter>ddlgn</Filter>
+    </ClInclude>
+    <ClInclude Include="device\Lock.h">
+      <Filter>device</Filter>
+    </ClInclude>
+    <ClInclude Include="device\Thread.h">
+      <Filter>device</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="view\Makefile">
+      <Filter>view</Filter>
+    </None>
+    <None Include="Makefile" />
+    <None Include="Makefile_LIB" />
+    <None Include="device\Makefile">
+      <Filter>device</Filter>
+    </None>
+    <None Include="dispatch\Makefile">
+      <Filter>dispatch</Filter>
+    </None>
+    <None Include="ddlgn\Makefile">
+      <Filter>ddlgn</Filter>
+    </None>
+    <None Include="Makefile_lgncheck" />
+  </ItemGroup>
+</Project>

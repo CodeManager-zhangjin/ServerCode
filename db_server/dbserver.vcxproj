@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{05FA940B-72BD-4BF8-84F1-B4D0379C8E39}</ProjectGuid>
+    <RootNamespace>dbserver</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="dbhandle\dbHandle.cpp" />
+    <ClCompile Include="dbhandle\dbHandleInterface.cpp" />
+    <ClCompile Include="dbhandle\dbHandle_operation.cpp" />
+    <ClCompile Include="dbhandle\dbHandle_storage.cpp" />
+    <ClCompile Include="dbhandle\DBSDK.cpp" />
+    <ClCompile Include="dbhandle\Lock.cpp" />
+    <ClCompile Include="dbhandle\StorageEngine.cpp" />
+    <ClCompile Include="dbhandle\Thread.cpp" />
+    <ClCompile Include="dbserver\main.cpp" />
+    <ClCompile Include="dbserver\Server.cpp" />
+    <ClCompile Include="serverapp\Lock.cpp" />
+    <ClCompile Include="serverapp\ServerApp.cpp" />
+    <ClCompile Include="serverapp\ServerAppInterface.cpp" />
+    <ClCompile Include="serverapp\ServerAuth.cpp" />
+    <ClCompile Include="serverapp\Thread.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dbhandle\dbHandle.h" />
+    <ClInclude Include="dbhandle\dbHandleInterface.h" />
+    <ClInclude Include="dbhandle\dbHandle_operation.h" />
+    <ClInclude Include="dbhandle\dbHandle_storage.h" />
+    <ClInclude Include="dbhandle\DBSDK.h" />
+    <ClInclude Include="dbhandle\dbTag.h" />
+    <ClInclude Include="dbhandle\Lock.h" />
+    <ClInclude Include="dbhandle\StorageEngine.h" />
+    <ClInclude Include="dbhandle\Thread.h" />
+    <ClInclude Include="dbserver\Server.h" />
+    <ClInclude Include="include\dbdef.h" />
+    <ClInclude Include="include\dbHandleInterface.h" />
+    <ClInclude Include="include\qiniuInterface.h" />
+    <ClInclude Include="include\ServerAppInterface.h" />
+    <ClInclude Include="include\UnlockManager.h" />
+    <ClInclude Include="include\WebcmdInterface.h" />
+    <ClInclude Include="serverapp\ElemMap_ServerApp.h" />
+    <ClInclude Include="serverapp\ElemSet_ServerApp.h" />
+    <ClInclude Include="serverapp\Lock.h" />
+    <ClInclude Include="serverapp\ServerApp.h" />
+    <ClInclude Include="serverapp\ServerAppInterface.h" />
+    <ClInclude Include="serverapp\ServerAuth.h" />
+    <ClInclude Include="serverapp\Thread.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dbhandle\Makefile" />
+    <None Include="Makefile" />
+    <None Include="Makefile_db" />
+    <None Include="Makefile_LIB" />
+    <None Include="Makefile_sdb" />
+    <None Include="serverapp\Makefile" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

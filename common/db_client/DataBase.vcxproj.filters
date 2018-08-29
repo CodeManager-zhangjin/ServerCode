@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="DataBaseInterface.cpp" />
+    <ClCompile Include="DataBaseA.cpp" />
+    <ClCompile Include="CGetUserInfoMgr.cpp" />
+    <ClCompile Include="CGetUserDeviceMgr.cpp" />
+    <ClCompile Include="CGetUserGroupMgr.cpp" />
+    <ClCompile Include="CGetUserRoomMgr.cpp" />
+    <ClCompile Include="StorageDBClient.cpp" />
+    <ClCompile Include="MainDBClient.cpp" />
+    <ClCompile Include="DBClient.cpp" />
+    <ClCompile Include="DataBaseB.cpp" />
+    <ClCompile Include="DBClientHandle.cpp" />
+    <ClCompile Include="DataBaseC.cpp" />
+    <ClCompile Include="StorageBusinessClient.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DataBaseInterface.h" />
+    <ClInclude Include="ElemMap_DataBase.h" />
+    <ClInclude Include="ElemSet_DataBase.h" />
+    <ClInclude Include="DataBaseA.h" />
+    <ClInclude Include="CGetUserInfoMgr.h" />
+    <ClInclude Include="CGetUserDeviceMgr.h" />
+    <ClInclude Include="CGetUserGroupMgr.h" />
+    <ClInclude Include="CGetUserRoomMgr.h" />
+    <ClInclude Include="StorageDBClient.h" />
+    <ClInclude Include="MainDBClient.h" />
+    <ClInclude Include="DBClient.h" />
+    <ClInclude Include="DataBaseB.h" />
+    <ClInclude Include="DBClientHandle.h" />
+    <ClInclude Include="DataBaseC.h" />
+    <ClInclude Include="StorageBusinessClient.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+  </ItemGroup>
+</Project>

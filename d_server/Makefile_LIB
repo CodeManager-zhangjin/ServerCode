@@ -1,0 +1,5 @@
+SUBDIRS := view dispatch device ddlgn
+all:
+	$(foreach N,$(SUBDIRS),make -C $(N);)
+clean:
+	$(foreach N,$(SUBDIRS),make -C $(N) clean;)

@@ -1,0 +1,14 @@
+all:
+	make -C serverapp -f Makefile_DB clean
+	make -C serverapp -f Makefile_DB
+	make -C serverapp -f Makefile_SDB clean
+	make -C serverapp -f Makefile_SDB
+	make -C dbhandle -f Makefile_DB clean
+	make -C dbhandle -f Makefile_DB
+	make -C dbhandle -f Makefile_SDB clean
+	make -C dbhandle -f Makefile_SDB
+clean:
+	make -C serverapp -f Makefile_DB clean
+	make -C serverapp -f Makefile_SDB clean
+	make -C dbhandle -f Makefile_DB clean
+	make -C dbhandle -f Makefile_SDB clean

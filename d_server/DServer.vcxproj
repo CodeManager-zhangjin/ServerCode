@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E419E140-0EC2-4D76-AC3B-A4D0E5BB086F}</ProjectGuid>
+    <RootNamespace>DServer</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ddlgn\ddlgnInterface.cpp" />
+    <ClCompile Include="ddlgn\ddLogin.cpp" />
+    <ClCompile Include="ddlgn\Lock.cpp" />
+    <ClCompile Include="ddlgn\Thread.cpp" />
+    <ClCompile Include="device\Device.cpp" />
+    <ClCompile Include="device\DeviceInterface.cpp" />
+    <ClCompile Include="device\Lock.cpp" />
+    <ClCompile Include="device\Thread.cpp" />
+    <ClCompile Include="dispatch\Dispatch.cpp" />
+    <ClCompile Include="dispatch\DispatchInterface.cpp" />
+    <ClCompile Include="d\main.cpp" />
+    <ClCompile Include="d\Server.cpp" />
+    <ClCompile Include="view\View.cpp" />
+    <ClCompile Include="view\ViewInterface.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ddlgn\ddlgnInterface.h" />
+    <ClInclude Include="ddlgn\ddLogin.h" />
+    <ClInclude Include="ddlgn\ElemSetDDLgn.h" />
+    <ClInclude Include="ddlgn\Lock.h" />
+    <ClInclude Include="ddlgn\Thread.h" />
+    <ClInclude Include="device\Device.h" />
+    <ClInclude Include="device\DeviceInterface.h" />
+    <ClInclude Include="device\ElemMapDevice.h" />
+    <ClInclude Include="device\Lock.h" />
+    <ClInclude Include="device\Thread.h" />
+    <ClInclude Include="dispatch\Dispatch.h" />
+    <ClInclude Include="dispatch\DispatchInterface.h" />
+    <ClInclude Include="dispatch\ElemMapDispatch.h" />
+    <ClInclude Include="d\Server.h" />
+    <ClInclude Include="include\SvrCheck.h" />
+    <ClInclude Include="view\View.h" />
+    <ClInclude Include="view\ViewInterface.h" />
+    <ClInclude Include="view\ElemMapView.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ddlgn\Makefile" />
+    <None Include="device\Makefile" />
+    <None Include="dispatch\Makefile" />
+    <None Include="Makefile" />
+    <None Include="Makefile_lgncheck" />
+    <None Include="Makefile_LIB" />
+    <None Include="view\Makefile" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
